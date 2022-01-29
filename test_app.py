@@ -6,10 +6,7 @@ app = Flask(__name__)
 
 @app.route("/moneymovements", methods=["GET"])
 def money_movements():
-    return jsonify({
-        "transactionInfo": data,
-        "message": "success",
-    }), 200
+    return jsonify(data), 200
 
 
 #  main thread of execution to start the server
